@@ -1,8 +1,29 @@
 #JanitorExpressMainLogo{
-    height:220px;
-    width: 260px;
+    height:140px;
+    width: 200px;
     margin-top:0px;
+}
+#parallaxLogo{
+    height:200px;
+    width: 200px
+}
+#mobile-demo{
+    background-color: #0e1438;
+}
+.sidenav li>a{
+    color:white;
+    font-weight:bold
+    !important 
 }
 .navLink{
     font-weight: bold;
+}
+.nav-wrapper{
+    background-color: #0e1438
+}
+
+#mainHeader{
+    text-align: center;
+    font-weight: bold;
+
 }
