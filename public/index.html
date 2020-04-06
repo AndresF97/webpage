@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Janitor Express</title>
 </head>
 <body>
-    <div class="navbar-fixed">
-    <nav>
+       <nav>
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">
                 <img class="card-panel hoverable" id="JanitorExpressMainLogo"src="assets/img/JanitorExpress.png" alt="Janitor express logo"></a>
@@ -22,53 +22,68 @@
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a class="navLink" href="index.html">Home</a></li>
-                <li><a class="navLink" href="badges.html">Services</a></li>
+                <li><a class="dropdown-trigger navLink" href="#!" data-target="dropdown2">Services<i class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a class="navLink" href="pastWork.html">Past Work</a></li>
                 <li><a class="navLink" href="aboutUs.html">About Us</a></li>
           </ul>
             </div>
-            <ul class="sidenav navLink" style="color:white" id="mobile-demo">
-                    <li style="color:white"><a class="navLink" style="color:white" href="index.html">Home</a></li>
-                    <li><a class="navLink" href="badges.html" style="color:white">Services</a></li>
-                    <li><a class="navLink" href="pastWork.html" style="color:white">Past Work</a></li>
-                    <li><a class="navLink" href="aboutUs.html" style="color:white">About Us</a></li>
-                  </ul>
       </nav>
-    </div>
+      <ul class="sidenav" id="mobile-demo">
+            <li><a class="navLink" href="index.html">Home</a></li>
+            <li><a class="dropdown-trigger navLink" href="#!" data-target="dropdown1">Services<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="navLink" href="pastWork.html">Past Work</a></li>
+            <li><a class="navLink" href="aboutUs.html">About Us</a></li>
+          </ul>
+          <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Carpet Cleaning</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Grout Cleaning</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Janitorial Services</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Floor Waxing/stripping</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#!">Carpet Cleaning</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Grout Cleaning</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Janitorial Services</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Floor Waxing/stripping</a></li>
+        </ul>
       <div class="parallax-container">
         <div class="parallax">
             <img id="parallaxLogo" src="assets/img/cityoakland.jpeg">
+            <div id="parallaxText">
+            <h1 id="mainHeader">Welcome to Janitor Express</h1>
+            </div>
         </div>
       </div>
       <div>
-          <div class="container">
-          <h1 id="mainHeader">Welome to Janitor Express</h1>
-          <h2>What we do</h2>
-          <p>Here in Janitor Express we focus on doing our jobs fast, clean and discreat. We think no matter how big or small the job is we give each job the attetion tjat it derserves.</p>
+            <h2 class="normalHeader">What we do</h2>
+            <p>Here in Janitor Express we focus on doing our jobs fast, clean and discreat. We think no matter how big or small the job is we give each job the attetion tjat it derserves.</p>
           <div class="row">
-                <div class="col s12">Services</div>
-                <div class="col s6">
+                <div class="col s12 normalHeader">Services</div>
+                <div class="col m3 services">
                     <h4>Carpet Cleaning</h4>
-                    <img src="" alt="carpet Image">
+                    <img src="assets/img/carpet.jpeg" id="subjectCarpet"alt="carpet Image">
                 </div>
-                <div class="col s6">
-                    <h4>Floor waxing/Stripping</h4>
-                    <img src="" alt="Waxing floor image">
+                <div class="col m3 services">
+                    <h4>Grout Cleaning</h4>
+                    <a href="">
+                        <img src="assets/img/grout.jpeg" id="subjectGrout" alt="Waxing floor image">
+                    </a>
                 </div>
-                <div class="col s6">
-                        <h4>Residential/School Cleaning</h4>
-                        <img src="" alt="school/residential cleaning">
+                <div class="col m3  services">
+                        <h4>Janitorial Services</h4>
+                        <img src="assets/img/office.jpeg" id="subjectFloor" alt="school/residential cleaning">
                 </div>
-                <div class="col s6">
-                        <h4>Bathroom cleaning</h4>
-                        <img src="" alt="Bathroomcleaning">
-                </div>
-                <div class="col s6">
+                <div class="col m3 services">
                         <h4>Floor waxing/Stripping</h4>
-                        <img src="" alt="Waxing floor image">
+                        <img src="assets/img/stripping.jpg" id="subjectWax"alt="Waxing floor image">
                 </div>
-              </div>
-
         </div>
       </div>
     <script src="assets/js/index.js"></script>

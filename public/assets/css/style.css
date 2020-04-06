@@ -1,3 +1,7 @@
+body{
+    height: auto;
+    width: auto
+}
 #JanitorExpressMainLogo{
     height:140px;
     width: 200px;
@@ -7,16 +11,41 @@
     height:200px;
     width: 200px
 }
-#mobile-demo{
-    background-color: #0e1438;
-}
-.sidenav li>a{
+#parallaxText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color:white;
-    font-weight:bold
-    !important 
+    font-family: 'Open Sans', sans-serif;
+  }
+.sidenav{
+    background-color: #0e1438
+    !important;
+    color: white
+    !important;
+    font-weight: bold
+    !important;
 }
 .navLink{
+    color: white
+    !important;
+    font-weight: bold
+    !important;
+}
+.normalHeader{
+    text-align: center;
     font-weight: bold;
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+}
+.services{
+    font-size:35px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    height:500px;
 }
 .nav-wrapper{
     background-color: #0e1438
@@ -25,5 +54,31 @@
 #mainHeader{
     text-align: center;
     font-weight: bold;
+    font-size: 80px;
 
 }
+#subjectCarpet{
+    height:400px;
+    width: 300px;
+    border-radius: 20px;
+}
+#subjectFloor{
+    height:410px;
+    width: 300px;
+    border-radius: 20px;
+}
+#subjectWax{
+    height:373px;
+    width: 300px;
+    border-radius: 20px;
+}
+#subjectGrout{
+    height:400px;
+    width: 300px;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 360px) {
+    .services{
+        width: 360px;
+    }
+  }
