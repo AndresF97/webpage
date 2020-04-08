@@ -1,6 +1,7 @@
 body{
     height: auto;
-    width: auto
+    width: auto;
+    background-color: #ebedfa
 }
 #JanitorExpressMainLogo{
     height:140px;
@@ -38,6 +39,23 @@ body{
     font-weight: bold;
     font-size: 60px;
     font-family: 'Open Sans', sans-serif;
+}
+.dropdown-content{
+    top:60px
+    !important;
+    background-color:#0e1438
+    !important;
+    position:20px
+    !important;
+    width:200px
+    !important;
+}
+#greetingParagraph{
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 0px
 }
 .services{
     font-size:35px;
