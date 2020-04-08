@@ -1,6 +1,12 @@
 body{
     height: auto;
     width: auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main{
+    flex: 1 0 auto;
 }
 #JanitorExpressMainLogo{
     height:140px;
@@ -50,14 +56,16 @@ body{
     !important;
 }
 #greetingParagraph{
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     padding-left: 40px;
     padding-right: 40px;
     margin-top: 0px
 }
 #serviceArea{
-    background-color:#ebedfa
+    background-color:#ebedfa;
+    margin-bottom: 0px
+    !important;
 }
 .services{
     font-size:35px;
@@ -95,6 +103,19 @@ body{
     height:400px;
     width: 300px;
     border-radius: 20px;
+}
+.footer-copyright{
+    text-align: center
+}
+.footerText{
+    color:white
+}
+.footerText:hover{
+    text-decoration: underline
+}
+footer{
+    background-color: #0e1438
+    !important;
 }
 @media only screen and (max-width: 360px) {
     .services{
