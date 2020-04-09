@@ -62,7 +62,7 @@ main{
     padding-right: 40px;
     margin-top: 0px
 }
-#paragraph{
+.paragraph{
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -123,6 +123,10 @@ footer{
 }
 #hotelImage{
     height:200px;
+    width:250px;
+}
+#schoolImage{
+    height: 200px;
     width:250px;
 }
 @media only screen and (max-width: 360px) {
