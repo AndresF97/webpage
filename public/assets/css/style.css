@@ -67,9 +67,12 @@ main{
     font-family: 'Open Sans', sans-serif;
 }
 #serviceArea{
-    background-color:#ebedfa;
-    margin-bottom: 0px
-    !important;
+    /* background-color:#ebedfa; */
+    width:100%;
+    height:100%;
+    /* margin-bottom: 0px
+    !important; */
+    padding-bottom: 40px
 }
 .services{
     font-size:35px;
@@ -77,6 +80,10 @@ main{
     border-radius: 20px;
     font-family: 'Open Sans', sans-serif;
     height:500px;
+}
+.servicePargraph{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 .nav-wrapper{
     background-color: #0e1438
@@ -89,23 +96,24 @@ main{
 
 }
 #subjectCarpet{
-    height:400px;
-    width: 300px;
+    height:300px;
+    width: 200px;
     border-radius: 20px;
 }
+
 #subjectFloor{
-    height:410px;
-    width: 300px;
+    height:300px;
+    width: 200px;
     border-radius: 20px;
 }
 #subjectWax{
-    height:373px;
-    width: 300px;
+    height:300px;
+    width: 200px;
     border-radius: 20px;
 }
 #subjectGrout{
-    height:400px;
-    width: 300px;
+    height:300px;
+    width: 200px;
     border-radius: 20px;
 }
 .footer-copyright{
