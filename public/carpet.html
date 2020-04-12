@@ -38,7 +38,7 @@
                   </ul>
                   <!-- Dropdown Structure -->
             <ul id="dropdown1" class="dropdown-content">
-                <li><a href="#!" class="navLink">Carpet Cleaning</a></li>
+                <li><a href="#!" class="navLink" data-selected="Carpet">Carpet Cleaning</a></li>
                 <li class="divider"></li>
                 <li><a href="#!" class="navLink">Grout Cleaning</a></li>
                 <li class="divider" class="navLink"></li>
@@ -47,14 +47,46 @@
                 <li><a href="#!" class="navLink">Floor Waxing/stripping</a></li>
             </ul>
             <ul id="dropdown2" class="dropdown-content">
-                    <li><a href="#!" class="navLink">Carpet Cleaning</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!" class="navLink">Grout Cleaning</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!" class="navLink">Janitorial Services</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!" class="navLink">Floor Waxing/stripping</a></li>
-                </ul>
-    
+                <li data-selected="Carpet"><a href="#!" class="navLink">Carpet Cleaning</a></li>
+                <li class="divider"></li>
+                <li  data-selected="grout"><a href="#!" class="navLink">Grout Cleaning</a></li>
+                <li class="divider"></li>
+                <li><a href="#!" class="navLink" data-selected="janitorial">Janitorial Services</a></li>
+                <li class="divider"></li>
+                <li><a href="#!" class="navLink" data-selected="floor">Floor Waxing/stripping</a></li>
+            </ul>
+            
+            
+    <footer class="page-footer">
+                <div class="row">
+                  <div class="col l3 s12">
+                      <img id="JanitorExpressMainLogo" src="assets/img/JanitorExpressLogo.jpeg">
+                  </div>
+                  <div class="col l3 s12">
+                    <h5 class="white-text">Our Contact</h5>
+                    <ul>
+                        <li><a href="https://mail.google.com/" class="footerText">Email: JanitorExpress2019@gmail.com</a></li>
+                        <li>Phone Number:(510)798-9273</li>
+                    </ul>
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Quick Links</h5>
+                    <ul>
+                      <li><a class="footerText" href="index.html">Home</a></li>
+                      <li><a class="footerText" href="#!">Services</a></li>
+                      <li><a class="footerText" href="pastWork.html">Past Work</a></li>
+                      <li><a class="footerText" href="#!">Contact us</a></li>
+                      <li><a class="footerText" href="#!">About us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              <div class="footer-copyright">
+                <div class="container">
+              Janitor Express - © 2020 All Rights Reserved.
+                </div>
+              </div>
+            </footer>
+            <script src="assets/js/index.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

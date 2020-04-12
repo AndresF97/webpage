@@ -5,6 +5,3 @@
     $(".dropdown-trigger").dropdown();
   })
 
-  $(".navLink").on("click",function(event){
-    console.log(event.val())
-  })
