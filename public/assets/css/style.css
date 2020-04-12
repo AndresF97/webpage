@@ -70,9 +70,7 @@ main{
     /* background-color:#ebedfa; */
     width:100%;
     height:100%;
-    /* margin-bottom: 0px
-    !important; */
-    padding-bottom: 40px
+    padding-bottom: 90px
 }
 .services{
     font-size:35px;
@@ -140,5 +138,48 @@ footer{
 @media only screen and (max-width: 360px) {
     .services{
         width: 360px;
+        margin-bottom: 80px;
     }
-  }
+}
+@media only screen and (max-width: 411px) {
+    .services{
+        width: 360px;
+        margin-bottom: 80px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .services{
+        width: 360px;
+        margin-bottom: 130px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .services{
+        width: 360px;
+        margin-bottom: 80px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .services{
+        width: 360px;
+        margin-bottom: 100px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .services{
+        width: 360px;
+        margin-bottom: 80px;
+    }
+    .servicePargraph{
+        font-size: 15px
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .services{
+        width: 360px;
+        margin-bottom: 20px;
+    }
+    .servicePargraph{
+        font-size: 15px
+    }
+}
