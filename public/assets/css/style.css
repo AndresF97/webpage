@@ -149,6 +149,10 @@ footer{
     width:250px;
     border-radius: 20px;
 }
+.alert{
+    font-family: 'Open Sans', sans-serif;
+    font-size:30px;
+}
 label.active,
 .input-field.prefix.active,
 i.input-field.prefix.active,
