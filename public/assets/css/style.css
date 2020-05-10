@@ -161,15 +161,20 @@ i.material-icons.prefix.active{
     !important;    
 }
 input#email.validate,
-input#first_name.validate,
 input#subject.validate,
-input#last_name.validate,
+input#full_name.validate,
 textarea#icon_prefix2.materialize-textarea
 {
     border-bottom:1px solid #0e1438
     !important;
     box-shadow: 0 1px 0 0 #0e1438
     !important;
+}
+.btn{
+    color:white
+    !important;
+    background-color: #0e1438
+    !important;    
 }
 @media only screen and (max-width: 360px) {
     .services{
