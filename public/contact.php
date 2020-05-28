@@ -57,23 +57,23 @@
                 <form class="col l8 m8 s8" action="assets/php/contact.php" method="POST">
                   <div class="row">
                     <div class="input-field col s6">
-                      <input id="full_name" type="text" name="name" class="validate">
-                      <label for="full_name" >Full Name</label>
+                      <input id="full_name" type="text" name="name" value="<?= name ?>"class="validate">
+                      <label for="full_name">Full Name</label>
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-field col s6">
-                      <input id="email" type="email" name="email" class="validate">
+                      <input id="email" type="email" name="email" value="<?= email ?>" class="validate">
                       <label for="email">Email</label>
                     </div>
                     <div class="input-field col s6">
-                        <input id="subject" type="text" name="subject" class="validate">
+                        <input id="subject" type="text" name="subject" value="<?= subject?>" class="validate">
                         <label for="subject">Subject</label>
                       </div>
                   </div>
                   <div class="input-field col s12">
                     <i class="material-icons prefix">mode_edit</i>
-                    <textarea id="icon_prefix2" class="materialize-textarea" name="message"></textarea>
+                    <textarea id="icon_prefix2" class="materialize-textarea" name="message" value="<?= message?>"></textarea>
                     <label for="icon_prefix2">Your message</label>
                   </div>
                   <button class="btn waves-effect waves-light" type="submit" id="send" name="submit">Send
