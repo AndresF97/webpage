@@ -1,11 +1,12 @@
 <?php
+print_r($_POST);
 // first step is to label the values for  each input
 $name = $email = $subject  = $message = "";
 if($_SERVER["REQUEST METHOD"] == "POST"){
     if(empty($_POST["name"])){
         $name_error = "name is required";
     }else{
-        $Fullname = test_input($_POST["Fullname"]);
+        $name = test_input($_POST["name"]);
         if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
             $name_error = "Only letters and white space allowed";
           }

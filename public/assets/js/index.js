@@ -4,7 +4,3 @@
     $('.sidenav').sidenav();
     $(".dropdown-trigger").dropdown();
   })
-
-$("#send").on("click",function(event){
-  event.preventDefault()
-})
