@@ -1,3 +1,4 @@
+<?php include("./assets/php/index.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +26,6 @@
                         <li><a class="dropdown-trigger navLink" href="#!" data-target="dropdown2">Services<i class="material-icons right">arrow_drop_down</i></a></li>
                         <li><a class="navLink" href="pastWork.html">Past Work</a></li>
                         <li><a class="navLink" href="contact.html">Contact us</a></li>
-                        <li><a class="navLink" href="aboutUs.html">About Us</a></li>
                     </ul>
                     </div>
               </nav>
@@ -34,7 +34,6 @@
                     <li><a class="dropdown-trigger navLink" href="#!" data-target="dropdown1">Services<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a class="navLink" href="pastWork.html">Past Work</a></li>
                     <li><a class="navLink" href="contact.html">Contact us</a></li>
-                    <li><a class="navLink" href="aboutUs.html">About Us</a></li>
                   </ul>
                   <!-- Dropdown Structure -->
             <ul id="dropdown1" class="dropdown-content">
@@ -54,7 +53,7 @@
           <div class="container">
              <h1 class="normalHeader">Contact Page</h1>
              <div class="row">
-                <form class="col l8 m8 s8" action="assets/php/contact.php" method="POST">
+                <form class="col l8 m8 s8" action="<?= $_SERVER['PHP_SELF'];?>" method="POST">
                   <div class="row">
                     <div class="input-field col s6">
                       <input id="full_name" type="text" name="name" value="<?= name ?>"class="validate">

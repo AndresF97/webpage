@@ -1,6 +1,6 @@
-<?php 
+<?php
 // first step is to label the values for  each input
-$Fullname = $email = $subject  = $message = "";
+$name = $email = $subject  = $message = "";
 if($_SERVER["REQUEST METHOD"] == "POST"){
     if(empty($_POST["name"])){
         $name_error = "name is required";
@@ -31,7 +31,7 @@ if($_SERVER["REQUEST METHOD"] == "POST"){
     $to = "janitorexpress2019@gmail.com";
     if(mai($to,$subject,$message)){
         //later add on success message here
-        $Fullname = $email = $subject = $message = "";
+        $name = $email = $subject = $message = "";
     }
 }
 function test_input($data){
