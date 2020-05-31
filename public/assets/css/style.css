@@ -16,6 +16,13 @@ main{
     height:64px;
     width: 180px;
     margin-top:0px;
+    background-color: white
+}
+#JanitorExpressBottomLogo{
+    height:200px;
+    width: 280px;
+    margin-top:0px;
+    background-color: white 
 }
 #parallaxLogo{
     height:200px;

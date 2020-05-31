@@ -16,7 +16,7 @@
         <nav>
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo">
-                        <img class="card-panel hoverable" id="JanitorExpressMainLogo" src="assets/img/JanitorExpress.png" alt="Janitor express logo"></a>
+                        <img id="JanitorExpressMainLogo" src="assets/img/smallJan.jpg" alt="Janitor express logo"></a>
                     </a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                         <i class="material-icons">reorder</i>
@@ -56,23 +56,23 @@
                 <form class="col l8 m8 s8" action="<?= $_SERVER['PHP_SELF'];?>" method="POST">
                   <div class="row">
                     <div class="input-field col s6">
-                      <input id="full_name" type="text" name="name" class="validate">
+                      <input id="full_name" type="text" name="name" value="<?= $name?>" class="validate">
                       <label for="full_name">Full Name</label>
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-field col s6">
-                      <input id="email" type="email" name="email" class="validate">
+                      <input id="email" type="email" name="email" value="<?= $email?>" class="validate">
                       <label for="email">Email</label>
                     </div>
                     <div class="input-field col s6">
-                        <input id="subject" type="text" name="subject" class="validate">
+                        <input id="subject" type="text" name="subject" value="<?= $subject?>" class="validate">
                         <label for="subject">Subject</label>
                       </div>
                   </div>
                   <div class="input-field col s12">
                     <i class="material-icons prefix">mode_edit</i>
-                    <textarea id="icon_prefix2" class="materialize-textarea" name="message"></textarea>
+                    <textarea id="icon_prefix2" class="materialize-textarea" value="<?= $message?>" name="message"></textarea>
                     <label for="icon_prefix2">Your message</label>
                   </div>
                   <button class="btn waves-effect waves-light" type="submit" name="submit">Send
@@ -94,7 +94,7 @@
           <footer class="page-footer">
                 <div class="row">
                   <div class="col l3 s12">
-                      <img id="JanitorExpressMainLogo" src="assets/img/JanitorExpressLogo.jpeg">
+                      <img id="JanitorExpressBottomLogo" src="assets/img/JanitorExpressLogo.jpeg">
                   </div>
                   <div class="col l3 s12">
                     <h5 class="white-text">Our Contact</h5>
