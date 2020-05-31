@@ -4,3 +4,6 @@
     $('.sidenav').sidenav();
     $(".dropdown-trigger").dropdown();
   })
+  $(".closebtn").on("click",function(event){
+    console.log($(this))
+  })

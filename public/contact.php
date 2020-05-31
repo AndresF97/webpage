@@ -80,9 +80,10 @@
                   </button>
                 </form>
                 <div class="col m4">
-                  <p class="alert">
-                    *Note: You can get a free quota.
-                  </p>
+                  <div class="alert">
+                  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                  <strong>Note:</strong> Email us to get a free quota. 
+                </div>
                 </div>
               </div>
           

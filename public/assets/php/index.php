@@ -1,5 +1,4 @@
 <?php
-print_r($_POST);
 // first step is to label the values for  each input
 $name = $email = $subject  = $message = "";
 // if($_SERVER["REQUEST METHOD"] == "POST"){
@@ -35,7 +34,7 @@ if(isset($_POST['submit'])){
     $subject= $_POST['subject'];
     $message = $_POST['message'];
     
-    $mailTo = 'andresdudex@hotmail.com';
+    $mailTo = 'andresdudex@gmail.com';
     $headers ='from '.$mail;
     $txt = "new message from".$name.".\n\n".$message;
     mail($mailTo,$subject,$txt,$headers);
