@@ -1,9 +1,9 @@
 module.exports = function(app,path){
     app.get("/",function(req,res){
-        res.sendFile(path.join(__dirname,"/public/index.html"))
+        res.sendFile(path.join(__dirname,"webpage/public/index.html"))
     })
     app.get("/floorInfo",function(req,res){
-        res.sendFile(path.join(__dirname,"/public/floor.html"))
+        res.sendFile(path.join(__dirname,"webpage/public/floor.html"))
     })
     app.get("/groutInfo",function(req,res){
         res.sendFile(path.join(__dirname,"/public/grout.html"))
