@@ -1,6 +1,6 @@
-var express = require("express");
-var app = express()
-var path = require("path")
+const express = require("express");
+const app = express()
+const path = require("path")
 
 
 app.use(express.static("public"));
@@ -10,4 +10,4 @@ app.use(express.urlencoded({ extended : true}));
 app.use(express.json());
 
 //Html routes
-require("./routes/htmlRoutes.js")(app,path)
+require("../routes/htmlRoutes.js")(app,path)
