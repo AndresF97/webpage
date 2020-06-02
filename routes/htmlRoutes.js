@@ -1,20 +1,20 @@
 module.exports = function(app,path){
-    app.get("/",function(req,res){
-        res.sendFile(path.join(__dirname,"webpage/public/index.html"))
-    })
     app.get("/floorInfo",function(req,res){
-        res.sendFile(path.join(__dirname,"webpage/public/floor.html"))
+        res.sendFile(path.join(__dirname,"../public/floor.html"))
     })
     app.get("/groutInfo",function(req,res){
-        res.sendFile(path.join(__dirname,"/public/grout.html"))
+        res.sendFile(path.join(__dirname,"../public/grout.html"))
     })
     app.get("/janitorialInfo",function(req,res){
-        res.sendFile(path.join(__dirname,"/public/janitor.html"))
+        res.sendFile(path.join(__dirname,"../public/janitor.html"))
     })
     app.get("/pastWork",function(req,res){
-        res.sendFile(path.join(__dirname,"/public/pastWork.html"))
+        res.sendFile(path.join(__dirname,"../public/pastWork.html"))
     })
     app.get("/contact",function(req,res){
-        res.sendFile(path.join(__dirname,"/public/contact.php"))
+        res.sendFile(path.join(__dirname,"../public/contact.php"))
+    })
+    app.get("/*",function(req,res){
+        res.sendFile(path.join(__dirname,"../public/index.html"))
     })
 }
