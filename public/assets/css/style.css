@@ -200,7 +200,14 @@ div.alert{
     color:red;
     font-size: 14px;
     font-weight: bold;
-}  
+}
+.success{
+    color:black;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #ddffcc;
+
+}
 .closebtn:hover {
     color: black;
 }

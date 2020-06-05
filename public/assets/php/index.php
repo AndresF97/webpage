@@ -2,7 +2,7 @@
 
 // first step is to label the values for  each input
 
-$name_error = $email_error = $subject_error = $message_error = "";
+$name_error = $email_error = $subject_error = $message_error = $success ="";
 $mName = $mEmail = $mSubject  = $mMessage = "";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     if($_POST["name"] == ""){
@@ -33,15 +33,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     if($name_error == "" and $email_error == "" and $subject_error == "" and $message_error == ""){
         print_r($_POST);
-        $message_body = "";
         unset($_POST['submit']);
-        foreach($_POST as $key => $value){
-            $message_body .= "$key : $value \n";
-        }
 
         $to= "customerservice@janitor-express.com";
-        if(mail($to,$subject,$message)){
+        $body = "";
+        $body .= "From:".$mName."\n\n";
+        $body .= "Email:".$mEmail."\n\n";
+        $body .= "Message".$mMessage."\n\n";
+        if(mail($to,$mSubject,$body)){
             $name = $email= $subject = $message = "";
+            $success = "Your email has been sent!";
         }
 
     }
