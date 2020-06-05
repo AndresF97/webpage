@@ -196,10 +196,15 @@ div.alert{
     cursor: pointer;
     transition: 0.3s; 
 }
-  
+.err{
+    color:red;
+    font-size: 14px;
+    font-weight: bold;
+}  
 .closebtn:hover {
     color: black;
 }
+
 @media only screen and (max-width: 360px) {
     .services{
         width: 360px;

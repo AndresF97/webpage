@@ -58,22 +58,26 @@
                     <div class="input-field col s6">
                       <input id="full_name" type="text" name="name" value="<?= $name?>" class="validate">
                       <label for="full_name">Full Name</label>
+                      <span class="err"><?= $name_error ?></span>
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-field col s6">
                       <input id="email" type="email" name="email" value="<?= $email?>" class="validate">
                       <label for="email">Email</label>
+                      <span class="err"><?= $email_error?></span>
                     </div>
                     <div class="input-field col s6">
                         <input id="subject" type="text" name="subject" value="<?= $subject?>" class="validate">
                         <label for="subject">Subject</label>
+                        <span class="err"><?= $subject_error ?></span>
                       </div>
                   </div>
                   <div class="input-field col s12">
                     <i class="material-icons prefix">mode_edit</i>
                     <textarea id="icon_prefix2" class="materialize-textarea" value="<?= $message?>" name="message"></textarea>
                     <label for="icon_prefix2">Your message</label>
+                    <span class="err"><?= $message_error?></span>
                   </div>
                   <button class="btn waves-effect waves-light" type="submit" name="submit">Send
                     <i class="material-icons right">send</i>
