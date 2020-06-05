@@ -7,7 +7,6 @@ $mName = $mEmail = $mSubject  = $mMessage = "";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     if($_POST["name"] == ""){
        $name_error = "name is required";
-       print_r($_POST);
     }else{
         $mName = test_input($_POST["name"]);
         if (!preg_match("/^[a-zA-Z ]*$/",$mName)) {
@@ -32,19 +31,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }else{
         $mMessage = test_input($_POST["message"]);
     }
-    // if($name_error = $email_error = $subject_error = $message_error = ""){
-    //     $message_body = "";
-    //     unset($_POST['submit']);
-    //     foreach($_POST as $key => $value){
-    //         $message_body .= "$key : $value \n";
-    //     }
+    if($name_error == "" and $email_error == "" and $subject_error == "" and $message_error == ""){
+        print_r($_POST);
+        $message_body = "";
+        unset($_POST['submit']);
+        foreach($_POST as $key => $value){
+            $message_body .= "$key : $value \n";
+        }
 
-    //     $to= "customerservice@janitor-express.com";
-    //     if(mail($to,$subject,$message)){
-    //         $name = $email= $subject = $message = "";
-    //     }
+        $to= "customerservice@janitor-express.com";
+        if(mail($to,$subject,$message)){
+            $name = $email= $subject = $message = "";
+        }
 
-    // }
+    }
 }
 function test_input($data){
     $data = trim($data);
